@@ -1,0 +1,110 @@
+@use "../helpers" as *;
+
+.about {
+  &-container {
+    @include container;
+    padding-block: rem(96);
+    display: flex;
+    gap: rem(40);
+
+    @include tablet {
+      flex-direction: column;
+      padding-block: rem(56);
+    }
+
+    .about-image {
+      border-radius: rem(40);
+      object-fit: calc(50%);
+      @include mobile {
+        height: auto;
+      }
+    }
+
+    .about-description {
+      display: flex;
+      flex-direction: column;
+      color: var(--color-black-100);
+
+      .about-intro {
+        @include font-body;
+        color: var(--color-black-50);
+      }
+
+      .about-title {
+        @include font-h2;
+
+        padding-bottom: rem(12);
+      }
+
+      .about-story {
+        @include font-body;
+      }
+
+      .about-specialization {
+        &-title {
+          margin-block: rem(12);
+        }
+
+        &-list {
+          > li {
+            padding-left: rem(24);
+            background-image: url("../../icons/checkmark.svg");
+            background-repeat: no-repeat;
+            background-position: 0 1px;
+            background-size: 16px;
+
+            &:not(:last-child) {
+              margin-bottom: rem(8);
+            }
+          }
+        }
+      }
+
+      .about-sign {
+        @include font-sign;
+        padding-top: rem(68);
+        rotate: -3deg;
+        text-align: end;
+
+        @include tablet {
+          padding-top: rem(49);
+        }
+      }
+
+      .about-values {
+        margin-top: rem(137.71);
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(16);
+
+        @include tablet {
+          margin-top: rem(29);
+        }
+
+        .about-values-title {
+          @include font-body-title;
+        }
+
+        .about-values-block {
+          @include font-body;
+          display: flex;
+          gap: rem(16);
+          padding-block: rem(23);
+
+          @include tablet {
+            flex-direction: column;
+            padding-block: 0;
+          }
+
+          .about-value {
+            padding: rem(16);
+            display: flex;
+            flex-direction: column;
+            border-radius: rem(24);
+            background-color: var(--color-white-80);
+          }
+        }
+      }
+    }
+  }
+}
