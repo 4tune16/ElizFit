@@ -1,7 +1,7 @@
 @use "../helpers" as *;
 
 .hero {
-  background: url("/images/sectionHeroBg.jpg") 0 45% / cover no-repeat;
+  background: url(/images/sectionHeroBg.jpg) 0 45% / cover no-repeat;
   width: 100dvw;
   height: 100dvh;
   @include flex-center(true);
