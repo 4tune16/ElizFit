@@ -271,7 +271,7 @@ li:has(> a):active {
 }
 
 .hero {
-  background: url(../../images/sectionHeroBg.jpg) 0 45%/cover no-repeat;
+  background: url(../images/section-hero.jpg) 0 45%/cover no-repeat;
   width: 100dvw;
   height: 100dvh;
   display: inline-flex;
@@ -476,7 +476,7 @@ li:has(> a):active {
 }
 .about-container .about-description .about-specialization-list > li {
   padding-left: 1.5rem;
-  background-image: url(../../icons/checkmark.svg);
+  background-image: url(../icons/checkmark.svg);
   background-repeat: no-repeat;
   background-position: 0 1px;
   background-size: 16px;
@@ -882,7 +882,7 @@ li:has(> a):active {
 }
 .formats-container .formats-bottom-block .format-center .format-info-list .format-info-item {
   padding-left: 1.875rem;
-  background-image: url(../../icons/checkmark.svg);
+  background-image: url(../icons/checkmark.svg);
   background-repeat: no-repeat;
   background-position: 0 -1px;
 }
